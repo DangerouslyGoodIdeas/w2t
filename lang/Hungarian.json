@@ -1,0 +1,66 @@
+
+{
+  "weather_type_emoji": {
+    "black_sun_with_rays":      "tiszta",
+    "cloud":                    "felhős",
+    "sun_behind_cloud":         "borús",
+    "sun_behind_rain_cloud":    "esősnek",
+    "thunder_cloud_and_rain":   "mennydörgős",
+    "snowflake":                "havazik",
+    "cloud_with_rain":          "felhős és esős",
+    "cloud_with_snow":          "hóvihar",
+    "fog":                      "ködös",
+    "unknown":                  "<Emoji Error>"
+  },
+
+  "wind_direction_emoji": {
+    "north_arrow": "dél észak",
+    "north_east_arrow": "délnyugat északkelet",
+    "east_arrow": "nyugat kelet",
+    "south_east_arrow": "északnyugat délkelet",
+    "down_arrow": "észak dél",
+    "south_west_arrow": "északkeletről délnyugatra",
+    "west_arrow": "keletről nyugatra",
+    "north_west_arrow": "délkelet felé északnyugat"
+  },
+
+  "weather_sentence": {
+    "first_chunk":              "Az Ön közelében az",
+    "second_chunk":             " időjárás ",
+    "third_chunk":              "WEATHER",
+    "fourth_chunk":             " tűnik, ",
+    "fifth_chunk" :             "TEMPRATURE",
+    "sixth_chunk" :             " hőmérséklettel."
+  },
+
+  "wind_sentence": {
+    "first_chunk":              "A ",
+    "second_chunk":             " szél ",
+    "third_chunk":             "WIND",
+    "fourth_chunk" :             " felől ",
+    "fifth_chunk" :             "SPEED",
+    "sixth_chunk" :             "-val fúj"
+
+  },
+
+    "greeting": {
+    "g_morning": "Jó reggelt  ",
+    "g_afternoon": "Jó napot ",
+    "g_evening": "Jó estét ",
+    "g_night": "Jó éjszakát "
+  },
+
+  "variables": {
+    "language": "Magyar",
+    "language_minus":   "mínusz",
+    "language_mph":     "Mph",
+    "language_kmh":     "km/h",
+    "language_kmh_words":"kilométer per óra",
+    "language_mps":     "m/s",
+    "language_knots":   "kn",
+    "language_c":       "°C",
+    "language_c_words": "celsius fokos",
+    "language_f":       "°f"
+
+  }
+}

@@ -1,0 +1,601 @@
+{
+  "AF": [
+    "Pashto",
+    "Dari"
+  ],
+  "AL": [
+    "Albanian"
+  ],
+  "DZ": [
+    "Arabic"
+  ],
+  "AS": [
+    "English",
+    "Samoan"
+  ],
+  "AD": [
+    "Catalan"
+  ],
+  "AO": [
+    "Portuguese"
+  ],
+  "AR": [
+    "Spanish"
+  ],
+  "AM": [
+    "Armenian"
+  ],
+  "AU": [
+    "English"
+  ],
+  "AT": [
+    "German"
+  ],
+  "AZ": [
+    "Azerbaijani"
+  ],
+  "BS": [
+    "English"
+  ],
+  "BH": [
+    "Arabic"
+  ],
+  "BD": [
+    "Bengali"
+  ],
+  "BB": [
+    "English"
+  ],
+  "BY": [
+    "Belarusian",
+    "Russian"
+  ],
+  "BE": [
+    "Dutch",
+    "French",
+    "German"
+  ],
+  "BZ": [
+    "English"
+  ],
+  "BJ": [
+    "French"
+  ],
+  "BM": [
+    "English"
+  ],
+  "BT": [
+    "Dzongkha"
+  ],
+  "BR": [
+    "Portuguese"
+  ],
+  "BG": [
+    "Bulgarian"
+  ],
+  "BF": [
+    "French"
+  ],
+  "BI": [
+    "Kirundi",
+    "French"
+  ],
+  "KH": [
+    "Khmer"
+  ],
+  "CM": [
+    "English",
+    "French"
+  ],
+  "CA": [
+    "English",
+    "French"
+  ],
+  "CL": [
+    "Spanish"
+  ],
+  "CN": [
+    "Mandarin"
+  ],
+  "CO": [
+    "Spanish"
+  ],
+  "CR": [
+    "Spanish"
+  ],
+  "HR": [
+    "Croatian"
+  ],
+  "CU": [
+    "Spanish"
+  ],
+  "CY": [
+    "Greek",
+    "Turkish"
+  ],
+  "CZ": [
+    "Czech"
+  ],
+  "DK": [
+    "Danish"
+  ],
+  "DJ": [
+    "French",
+    "Arabic"
+  ],
+  "DM": [
+    "English"
+  ],
+  "DO": [
+    "Spanish"
+  ],
+  "EC": [
+    "Spanish"
+  ],
+  "EG": [
+    "Arabic"
+  ],
+  "SV": [
+    "Spanish"
+  ],
+  "GQ": [
+    "Spanish",
+    "French",
+    "Portuguese"
+  ],
+  "ER": [
+    "Tigrinya",
+    "Arabic",
+    "English"
+  ],
+  "EE": [
+    "Estonian"
+  ],
+  "ET": [
+    "Amharic"
+  ],
+  "FJ": [
+    "English"
+  ],
+  "FI": [
+    "Finnish",
+    "Swedish"
+  ],
+  "FR": [
+    "French"
+  ],
+  "GA": [
+    "French"
+  ],
+  "GM": [
+    "English"
+  ],
+  "GE": [
+    "Georgian"
+  ],
+  "DE": [
+    "German"
+  ],
+  "GH": [
+    "English"
+  ],
+  "GR": [
+    "Greek"
+  ],
+  "GD": [
+    "English"
+  ],
+  "GT": [
+    "Spanish"
+  ],
+  "GN": [
+    "French"
+  ],
+  "GW": [
+    "Portuguese"
+  ],
+  "GY": [
+    "English"
+  ],
+  "HT": [
+    "French",
+    "Haitian Creole"
+  ],
+  "HN": [
+    "Spanish"
+  ],
+  "HU": [
+    "Hungarian"
+  ],
+  "IS": [
+    "Icelandic"
+  ],
+  "IN": [
+    "Hindi",
+    "English"
+  ],
+  "ID": [
+    "Indonesian"
+  ],
+  "IR": [
+    "Persian"
+  ],
+  "IQ": [
+    "Arabic",
+    "Kurdish"
+  ],
+  "IE": [
+    "Irish",
+    "English"
+  ],
+  "IL": [
+    "Hebrew",
+    "Arabic"
+  ],
+  "IT": [
+    "Italian"
+  ],
+  "JM": [
+    "English"
+  ],
+  "JP": [
+    "Japanese"
+  ],
+  "JO": [
+    "Arabic"
+  ],
+  "KZ": [
+    "Kazakh",
+    "Russian"
+  ],
+  "KE": [
+    "English",
+    "Swahili"
+  ],
+  "KI": [
+    "English"
+  ],
+  "KR": [
+    "Korean"
+  ],
+  "KW": [
+    "Arabic"
+  ],
+  "KG": [
+    "Kyrgyz",
+    "Russian"
+  ],
+  "LA": [
+    "Lao"
+  ],
+  "LV": [
+    "Latvian"
+  ],
+  "LB": [
+    "Arabic"
+  ],
+  "LS": [
+    "English",
+    "Sesotho"
+  ],
+  "LR": [
+    "English"
+  ],
+  "LY": [
+    "Arabic"
+  ],
+  "LI": [
+    "German"
+  ],
+  "LT": [
+    "Lithuanian"
+  ],
+  "LU": [
+    "Luxembourgish",
+    "French",
+    "German"
+  ],
+  "MG": [
+    "Malagasy",
+    "French"
+  ],
+  "MW": [
+    "English",
+    "Chichewa"
+  ],
+  "MY": [
+    "Malay"
+  ],
+  "MV": [
+    "Dhivehi"
+  ],
+  "ML": [
+    "French"
+  ],
+  "MT": [
+    "Maltese",
+    "English"
+  ],
+  "MH": [
+    "Marshallese",
+    "English"
+  ],
+  "MR": [
+    "Arabic"
+  ],
+  "MU": [
+    "English"
+  ],
+  "MX": [
+    "Spanish"
+  ],
+  "FM": [
+    "English"
+  ],
+  "MD": [
+    "Romanian"
+  ],
+  "MC": [
+    "French"
+  ],
+  "MN": [
+    "Mongolian"
+  ],
+  "ME": [
+    "Montenegrin"
+  ],
+  "MA": [
+    "Arabic"
+  ],
+  "MZ": [
+    "Portuguese"
+  ],
+  "MM": [
+    "Burmese"
+  ],
+  "NA": [
+    "English"
+  ],
+  "NR": [
+    "Nauruan",
+    "English"
+  ],
+  "NP": [
+    "Nepali"
+  ],
+  "NL": [
+    "Dutch"
+  ],
+  "NZ": [
+    "English",
+    "M\u0101ori",
+    "NZ Sign Language"
+  ],
+  "NI": [
+    "Spanish"
+  ],
+  "NE": [
+    "French"
+  ],
+  "NG": [
+    "English"
+  ],
+  "NO": [
+    "Norwegian"
+  ],
+  "OM": [
+    "Arabic"
+  ],
+  "PK": [
+    "Urdu",
+    "English"
+  ],
+  "PW": [
+    "English",
+    "Palauan"
+  ],
+  "PA": [
+    "Spanish"
+  ],
+  "PG": [
+    "English",
+    "Tok Pisin",
+    "Hiri Motu"
+  ],
+  "PY": [
+    "Spanish",
+    "Guarani"
+  ],
+  "PE": [
+    "Spanish"
+  ],
+  "PH": [
+    "Filipino",
+    "English"
+  ],
+  "PL": [
+    "Polish"
+  ],
+  "PT": [
+    "Portuguese"
+  ],
+  "QA": [
+    "Arabic"
+  ],
+  "RO": [
+    "Romanian"
+  ],
+  "RU": [
+    "Russian"
+  ],
+  "RW": [
+    "Kinyarwanda",
+    "English",
+    "French"
+  ],
+  "WS": [
+    "Samoan",
+    "English"
+  ],
+  "SM": [
+    "Italian"
+  ],
+  "ST": [
+    "Portuguese"
+  ],
+  "SA": [
+    "Arabic"
+  ],
+  "SN": [
+    "French"
+  ],
+  "RS": [
+    "Serbian"
+  ],
+  "SC": [
+    "English",
+    "French",
+    "Seychellois Creole"
+  ],
+  "SL": [
+    "English"
+  ],
+  "SG": [
+    "English",
+    "Malay",
+    "Mandarin",
+    "Tamil"
+  ],
+  "SK": [
+    "Slovak"
+  ],
+  "SI": [
+    "Slovene"
+  ],
+  "SB": [
+    "English"
+  ],
+  "SO": [
+    "Somali",
+    "Arabic"
+  ],
+  "ZA": [
+    "Afrikaans",
+    "English",
+    "Zulu",
+    "Xhosa",
+    "Southern Sotho",
+    "Tswana",
+    "Swati",
+    "Venda",
+    "Tsonga",
+    "Northern Sotho",
+    "Ndebele"
+  ],
+  "ES": [
+    "Spanish"
+  ],
+  "LK": [
+    "Sinhala",
+    "Tamil"
+  ],
+  "SD": [
+    "Arabic",
+    "English"
+  ],
+  "SR": [
+    "Dutch"
+  ],
+  "SE": [
+    "Swedish"
+  ],
+  "CH": [
+    "German",
+    "French",
+    "Italian",
+    "Romansh"
+  ],
+  "SY": [
+    "Arabic"
+  ],
+  "TW": [
+    "Mandarin"
+  ],
+  "TJ": [
+    "Tajik"
+  ],
+  "TZ": [
+    "Swahili",
+    "English"
+  ],
+  "TH": [
+    "Thai"
+  ],
+  "TL": [
+    "Tetum",
+    "Portuguese"
+  ],
+  "TG": [
+    "French"
+  ],
+  "TO": [
+    "Tongan",
+    "English"
+  ],
+  "TT": [
+    "English"
+  ],
+  "TN": [
+    "Arabic"
+  ],
+  "TR": [
+    "Turkish"
+  ],
+  "TM": [
+    "Turkmen"
+  ],
+  "UG": [
+    "English",
+    "Swahili"
+  ],
+  "UA": [
+    "Ukrainian"
+  ],
+  "AE": [
+    "Arabic"
+  ],
+  "GB": [
+    "English"
+  ],
+  "US": [
+    "English"
+  ],
+  "UY": [
+    "Spanish"
+  ],
+  "UZ": [
+    "Uzbek"
+  ],
+  "VU": [
+    "Bislama",
+    "English",
+    "French"
+  ],
+  "VE": [
+    "Spanish"
+  ],
+  "VN": [
+    "Vietnamese"
+  ],
+  "YE": [
+    "Arabic"
+  ],
+  "ZM": [
+    "English"
+  ],
+  "ZW": [
+    "English",
+    "Shona",
+    "Northern Ndebele"
+  ]
+}
