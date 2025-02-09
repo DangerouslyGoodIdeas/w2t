@@ -43,7 +43,7 @@ w2t_emoji_convert_weather() {
         #printf "has a high likelyhood of being cloudy. "
         ;;
     #partly cloudy
-        ⛅️)
+        ⛅)
         W2T_EMOJI_WEATHER_TXT="sun_behind_cloud"
         #printf "has a high likelyhood of being partly cloudy. "
         ;;
