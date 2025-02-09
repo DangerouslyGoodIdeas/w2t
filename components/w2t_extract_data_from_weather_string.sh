@@ -13,6 +13,7 @@ w2t_extract_weather_emoji(){
 
 #Extract Temprature
 w2t_extract_temprature() {
+  local themometer_emoji degrees_symbol temprature_start_position temprature_end_position temprature_start_offset temprature_end_offset wind_speed_var_length
   # Define symbols
   themometer_emoji="🌡"
   degrees_symbol="°"
@@ -35,6 +36,36 @@ w2t_extract_temprature() {
   #echo "Extracted temperature: $W2T_EXTRACTED_TEMPRATURE"
 }
 
+w2t_extract_temprature_symbol() {
+  local themometer_emoji degrees_symbol
+
+  # Define symbols
+  themometer_emoji="🌡"
+  degrees_symbol="°"
+
+  #echo $JSON_HANDLING_WEATHER_CURL
+  # Find positions of symbols
+  symbol_start_position=$(expr index "$JSON_HANDLING_WEATHER_CURL" "$themometer_emoji")
+  #echo $symbol_start_position
+  symbol_end_position=$(expr index "$JSON_HANDLING_WEATHER_CURL" "$degrees_symbol")
+  #echo $symbol_end_position
+
+  #echo "The character '$themometer_emoji' is at position $temprature_start_position"
+  #echo "The character '$degrees_symbol' is at position $temprature_end_position"
+
+  # Compute offsets
+  symbol_start_offset=$((symbol_start_position + 1))
+  symbol_end_offset=$((symbol_end_position - 2))
+
+  symbol_var_length=$((symbol_end_offset - symbol_start_offset))
+  W2T_EXTRACTED_SYMBOL=${JSON_HANDLING_WEATHER_CURL:$symbol_start_offset:$symbol_var_length}
+
+#echo "this is a symbol; "
+#echo $W2T_EXTRACTED_SYMBOL
+
+}
+
+
 #Extract Wind Direction
 w2t_extract_wind_direction(){
     local wind_emoji emoji_position wind_emoji_offset
@@ -43,19 +74,19 @@ w2t_extract_wind_direction(){
     wind_emoji="🌬"
     # weather_report=$(curl -s wttr.in/$city_name\?format=2)
     #pulls the index of $wind emoji from $weather_report
-    emoji_position=$(expr index "$JSON_HANDLING_WEATHER_CURL" "wind_emoji")
+    emoji_position=$(expr index "$JSON_HANDLING_WEATHER_CURL" "$wind_emoji")
     #offset=$("5")
     #echo "The character '$wind_emoji' is at position $emoji_position"
 
     #offsets the position of the wind emoji to find the arrow position
-    wind_emoji_offset=$(( $emoji_position - 5 ))
+    wind_emoji_offset=$(( $emoji_position + 1 ))
     #uncomment to see the wind offset value
     #echo "offset for wind is $wind_emoji_offset"
 
     #pulls the wind emoji from the $weather_report.
     W2T_EXTRACTED_WIND_DIRECTION=${JSON_HANDLING_WEATHER_CURL:$wind_emoji_offset:1}
     #test output
-    #echo $W2T_EXTRACTED_WIND_DIRECTION
+    #echo "wind direction; $W2T_EXTRACTED_WIND_DIRECTION"
 }
 
 # #Extract Wind Speed
@@ -64,7 +95,7 @@ w2t_extract_wind_direction(){
      wind_emoji="🌬"
     # weather_report=$(curl -s wttr.in/$city_name\?format=2)
     #pulls the index of $wind emoji from $weather_report
-    emoji_position=$(expr index "$JSON_HANDLING_WEATHER_CURL" "wind_emoji")
+    emoji_position=$(expr index "$JSON_HANDLING_WEATHER_CURL" "$wind_emoji")
     #offset=$("5")
     #echo "The character '$wind_emoji' is at position $emoji_position"
 
@@ -75,7 +106,7 @@ w2t_extract_wind_direction(){
     wind_speed_end_position=$(expr index "$JSON_HANDLING_WEATHER_CURL" "letter_k")
     #emoji_position=$(expr index "$weather_report" "wind_emoji")
     #using the emoji position from earlier count -4 to find start of the windspeed
-    wind_speed_start_offset=$(( $emoji_position - 4 ))
+    wind_speed_start_offset=$(( $emoji_position + 2 ))
     #using the $wind_speed_end_position, count 1 space back to find the actual end point
     wind_speed_end_offset=$(( $wind_speed_end_position - 1 ))
     #subtract numbers to get length of string
