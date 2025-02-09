@@ -52,7 +52,7 @@
 
   "variables": {
     "language": "English",
-    "language_minus":   "minus",
+    "language_minus":   "minus ",
     "language_mph":     "Mph",
     "language_kmh":     "km/h",
     "language_kmh_words":"kilometers an hour",
