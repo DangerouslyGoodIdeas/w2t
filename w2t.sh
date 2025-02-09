@@ -11,8 +11,9 @@ script_dir=$(dirname "$(realpath "$0")")
 
 W2T_ALPHA2="false"
 W2T_VERBOS="false"
+W2T_SETTLE="false"
 
-while getopts ":a:hv" W2T_OPTIONS;
+while getopts ":a:hs:v" W2T_OPTIONS;
 do
   case "${W2T_OPTIONS}" in
     a) W2T_ALPHA2="$OPTARG"
@@ -43,17 +44,22 @@ do
         fi
       ;;
     h) h_flag=''
-      echo "-h    =   This option prints this help screen"
-      echo "-a    =   This option overides alpha-2 code and uses another option"
-      echo "          For example; '-a HU' will use the hungarian HU country code to find the language"
-      echo "          All country codes are in capitals only."
-      echo "          Country codes are refrenced in /lang/iso_languages.json if your code isn't in this add it."
-      echo "-v    =   This option prints a verbose weather report (not yet implimented)"
+      printf " -h    =  This option prints this help screen\n\n"
+      printf " -a    =  This option overides alpha-2 code and uses another option\n"
+      printf "          For example; '-a HU' will use the hungarian HU country code to find the 'hungarian' language\n"
+      printf "          All country codes are in capitals only.\n"
+      printf "          Country codes are refrenced to languages in /lang/iso_languages.json if your code isn't in this add it.\n\n"
+      printf " -s    =  This option activates custom settlement mode\n"
+      printf "          For example; '-s Exeter' will use the city Exeter instead of the settlement obtained from https://ipinfo.io/json \n"
+      printf "          Settlements must be written according to wttr.in instructions.\n\n"
+      printf " -v    =  This option prints a verbose weather report\n\n"
       exit 1
       ;;
-    v) verbose='true'
-      W2T_VERBOS="true"
-      echo "-v    =  prints verbose weather report in the future"
+    s) W2T_SETTLE="$OPTARG"
+      # activates custom settlement mode
+      ;;
+    v) W2T_VERBOS="true"
+      # activates verbose mode
       ;;
     \?)
       echo "invalid option $W2T_OPTIONS" 1>&2
@@ -145,6 +151,12 @@ w2t_download_json
 #echo "City: $JSON_HANDLING_CITY"        # e.g., Plymouth
 #echo "Country: $JSON_HANDLING_COUNTRY"  # e.g., UK (Alpha-2 Codes accepted)
 #
+
+ if [ $W2T_SETTLE != "false" ]; then
+   JSON_HANDLING_CITY="$W2T_SETTLE"
+ fi
+
+
  if [ $W2T_ALPHA2 != "false" ]; then
    JSON_HANDLING_COUNTRY="$W2T_ALPHA2"
  fi
@@ -166,7 +178,8 @@ w2t_extract_weather_emoji
 
 w2t_extract_wind_direction
 #echo for showing extracted wind direction
-#echo "$W2T_EXTRACTED_WIND_DIRECTION"
+#echo "$W2T_EX#echo "City: $JSON_HANDLING_CITY"        # e.g., Plymouth
+#echo "Country: $JSON_HANDLING_COUNTRY" TRACTED_WIND_DIRECTION"
 
 w2t_extract_windspeed
 #echo $W2T_EXTRACTED_WINDSPEED"Km/h" #write options for mph and mps
@@ -193,9 +206,13 @@ w2t_code_to_lang
 #------------------Print Weather Report-------------------
 w2t_structure_report
 
-if W2T_VERBOS = "true"; then
-  echo "verb test"
-  echo "$JSON_HANDLING_WEATHER_CURL"
+# if the -v verbose flag is used this will add more information
+if $W2T_VERBOS = "true"; then
+
+  printf "\nWeather report from wttn.io; $JSON_HANDLING_WEATHER_CURL\n\n"
+
+  printf "Queried settlement name; $JSON_HANDLING_CITY\n"
+  printf "Current ISO 3166-1 alpha-2 code; $JSON_HANDLING_COUNTRY\n\n"
 fi
 
 printf "$W2T_REPORT_WIND\n"
