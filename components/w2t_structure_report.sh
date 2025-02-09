@@ -70,9 +70,9 @@ if [ $W2T_STRUCTURE_TIME -lt 5 ]; then
     #extract afternoon greeting
     W2T_STRUCTURE_GREETING=$(jq -r .greeting.g_evening "$json_lang_file")
 
-    elif [ $W2T_STRUCTURE_TIME -lt 23 ]; then
+    elif [ $W2T_STRUCTURE_TIME -lt 24 ]; then
     #extract afternoon greeting
-    W2T_STRUCTURE_GREETING=$(jq -r .greeting.g_evening "$json_lang_file")
+    W2T_STRUCTURE_GREETING=$(jq -r .greeting.g_night "$json_lang_file")
 fi
 
  W2T_USERNAME=$(cat /etc/passwd | grep $(whoami) | cut -d: -f 5)
